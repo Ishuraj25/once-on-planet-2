@@ -1,0 +1,309 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{250F93B2-6C22-45DB-B4A4-B531AA6928F2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project_WBD__Group_1_</RootNamespace>
+    <AssemblyName>Project WBD %28Group 1%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44315</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.9\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.9\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.9\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="A.Img\Bali tiger.jpg" />
+    <Content Include="A.Img\Chinese River Dolphin.jpg" />
+    <Content Include="A.Img\Eastern Cougar.jpg" />
+    <Content Include="A.Img\Eobasileus.jpg" />
+    <Content Include="A.Img\Irish Elk.jpg" />
+    <Content Include="A.Img\Pink.jpg" />
+    <Content Include="A.Img\pyrenean ibex.jpg" />
+    <Content Include="A.Img\Quagga.jpg" />
+    <Content Include="A.Img\saber-toothed tiger.jpg" />
+    <Content Include="A.Img\Stellers Sea Cow.jpg" />
+    <Content Include="A.Img\Thylacine.jpg" />
+    <Content Include="A.Img\Western black rhino.jpg" />
+    <Content Include="A.Img\woolly mammoth.jpg" />
+    <Content Include="Amph. Img\Ainsworth salamander.jpeg" />
+    <Content Include="Amph. Img\Amphibian.jpeg" />
+    <Content Include="Amph. Img\Aquatic salamander.jpeg" />
+    <Content Include="Amph. Img\Australian torrent frog.jpeg" />
+    <Content Include="Amph. Img\Caecilian1.jpeg" />
+    <Content Include="Amph. Img\Caecilian2.jpeg" />
+    <Content Include="Amph. Img\Chiriqui Harlequin frog.jpeg" />
+    <Content Include="Amph. Img\Eungella gastric brooding forg.jpeg" />
+    <Content Include="Amph. Img\Eungella gastric frog.jpeg" />
+    <Content Include="Amph. Img\Fro.jpeg" />
+    <Content Include="Amph. Img\G.jpeg" />
+    <Content Include="Amph. Img\Golden toad.jpeg" />
+    <Content Include="Amph. Img\Jalpa false frook salamander.jpeg" />
+    <Content Include="Amph. Img\Maracay Harlequin frog.jpeg" />
+    <Content Include="Amph. Img\Mountain mist frog.jpeg" />
+    <Content Include="Amph. Img\Notophthalmus eastern newt.jpeg" />
+    <Content Include="Amph. Img\P&amp;Y.jpg" />
+    <Content Include="Amph. Img\Pass stubfoot toad.jpeg" />
+    <Content Include="Amph. Img\Seirra de omoa streamside frog.jpeg" />
+    <Content Include="Amph. Img\Sharp nosed bush frog.jpeg" />
+    <Content Include="Amph. Img\Sharp snaouted frog.jpeg" />
+    <Content Include="Amph. Img\Splendid poison frog.jpeg" />
+    <Content Include="Amph. Img\Teotepec salamander.jpeg" />
+    <Content Include="Amph. Img\Tlapaeoyan salamander.jpeg" />
+    <Content Include="Amph. Img\Variable bush frog.jpeg" />
+    <Content Include="Amph. Img\W&amp;C.jpeg" />
+    <Content Include="Amph. Img\Y&amp;B.jpg" />
+    <Content Include="Amphibians.html" />
+    <Content Include="B.Img\Amphi. card.jpg" />
+    <Content Include="B.Img\Amsterdam wigeon.jpg" />
+    <Content Include="B.Img\Arabian Ostrich.jpg" />
+    <Content Include="B.Img\AscensionNightHeron.jpg" />
+    <Content Include="B.Img\Auk Bird.jpg" />
+    <Content Include="B.Img\Bgi home.jpg" />
+    <Content Include="B.Img\Bird Card.jpg" />
+    <Content Include="B.Img\Carolina Parakeet.jpg" />
+    <Content Include="B.Img\Christmas Sandpiper.jpg" />
+    <Content Include="B.Img\Cuban Macaw.jpg" />
+    <Content Include="B.Img\Dodo.jpg" />
+    <Content Include="B.Img\Dodo1.jpg" />
+    <Content Include="B.Img\Elephant Bird.jpg" />
+    <Content Include="B.Img\Endangered card.jpg" />
+    <Content Include="B.Img\Fish card.jpg" />
+    <Content Include="B.Img\Grad2.jpg" />
+    <Content Include="B.Img\Grad3.jpg" />
+    <Content Include="B.Img\Great Auk.jpg" />
+    <Content Include="B.Img\Himalayan Quail.jpg" />
+    <Content Include="B.Img\Insects card.jpg" />
+    <Content Include="B.Img\Ivory-Billed.jpg" />
+    <Content Include="B.Img\Labrador Duck.jpg" />
+    <Content Include="B.Img\Logo.png" />
+    <Content Include="B.Img\Mammal card.jpg" />
+    <Content Include="B.Img\Mammoth.jpg" />
+    <Content Include="B.Img\Mauritius Blue Pigeon.jpg" />
+    <Content Include="B.Img\Passenger Pigeon.jpg" />
+    <Content Include="B.Img\Passenger Pigeon1.jpg" />
+    <Content Include="B.Img\Reptile Card.jpg" />
+    <Content Include="B.Img\Slide IMG1.jpg" />
+    <Content Include="B.Img\Tasmanian Emu.jpg" />
+    <Content Include="B.Img\Tasmanian tiger.jpg" />
+    <Content Include="B.Img\Woolly Rhino.jpg" />
+    <Content Include="Birds.html" />
+    <Content Include="Caecilians.html" />
+    <Content Include="CSS\StyleSheet1.css" />
+    <Content Include="CSS\StyleSheet2.css" />
+    <Content Include="Disclaimer.html" />
+    <Content Include="End.Img\Amur Leopard.jpg" />
+    <Content Include="End.Img\Hawksbill Sea Turtle.jpg" />
+    <Content Include="End.Img\Illus Log in.jpg" />
+    <Content Include="End.Img\Javan rhino.jpg" />
+    <Content Include="End.Img\P&amp;B.jpg" />
+    <Content Include="End.Img\Pink Coockatoo.jpg" />
+    <Content Include="End.Img\Queen Alexandra%27s birdwing.jpg" />
+    <Content Include="End.Img\Sheep Leaf Sea Slug.jpg" />
+    <Content Include="End.Img\Sunda Tiger.jpg" />
+    <Content Include="End.Img\The Tapanuli Orangutan.jpg" />
+    <Content Include="End.Img\Two Juvenile Mountain Gorillas.jpg" />
+    <Content Include="End.Img\Yangtze Finless Porpoise.jpg" />
+    <Content Include="Endangered.html" />
+    <Content Include="F.Img\Chinese Paddle Fish.jpg" />
+    <Content Include="Frog.html" />
+    <Content Include="I.Img\Pigtoe and the Pearly Mussel.jpg" />
+    <Content Include="F.Img\Santa Cruz Pupfish.jpg" />
+    <Content Include="F.Img\Sea.jpg" />
+    <Content Include="F.Img\Snake River Sucker.jpg" />
+    <Content Include="F.Img\The Blackfin Cisco.jpg" />
+    <Content Include="F.Img\The Blue Walleye.jpg" />
+    <Content Include="F.Img\The Galapagos Damsel.jpg" />
+    <Content Include="F.Img\The Silver Trout.jpg" />
+    <Content Include="F.Img\The Yellowfin Cutthroat Trout.jpg" />
+    <Content Include="F.Img\Ukrainian Migratory Lamprey.jpg" />
+    <Content Include="F.Img\Utah Lake Sculpin.jpg" />
+    <Content Include="Fishes.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Home Page.html" />
+    <Content Include="I.Img\Caribbean Monk Seal Nasal Mite.jpg" />
+    <Content Include="I.Img\Cascade Funnel-Web Spider.jpg" />
+    <Content Include="I.Img\Grad4.jpg" />
+    <Content Include="I.Img\Lake Pedder Earthworm.jpg" />
+    <Content Include="I.Img\Levuana Moth.jpg" />
+    <Content Include="I.Img\Madeiran Large White.jpg" />
+    <Content Include="I.Img\Polynesian Tree Snail.jpg" />
+    <Content Include="I.Img\Rocky Mountain Locust.jpg" />
+    <Content Include="I.Img\Sloanes Urania.jpg" />
+    <Content Include="I.Img\Xerces Blue.jpg" />
+    <Content Include="Insects.html" />
+    <Content Include="Log in.html" />
+    <Content Include="Mammals.html" />
+    <Content Include="R.Img\cape verde gaint.jpeg" />
+    <Content Include="R.Img\Delcourt gaint gecko.jpeg" />
+    <Content Include="R.Img\Domed rodrigues gaint turtoise.jpeg" />
+    <Content Include="R.Img\Galapagos gaint tortoise.jpeg" />
+    <Content Include="R.Img\Green&amp;red.jpg" />
+    <Content Include="R.Img\Guadeloupe ameiva.jpeg" />
+    <Content Include="R.Img\Hoffstetters worm snake.jpeg" />
+    <Content Include="R.Img\Jamaican giant galliwasp.jpeg" />
+    <Content Include="R.Img\Martinique gaint ameiva.jpeg" />
+    <Content Include="R.Img\navassa curly tailed.jpeg" />
+    <Content Include="R.Img\P&amp;Y.jpg" />
+    <Content Include="R.Img\Pinta gaint tortoise.jpeg" />
+    <Content Include="R.Img\Reunion gaint tortoise.jpeg" />
+    <Content Include="R.Img\Round island burrowing boa.jpeg" />
+    <Content Include="R.Img\Saddle-Backed mauritius gaint tortoise.jpeg" />
+    <Content Include="R.Img\Saddle-baked rodrigues gaint tortoise.jpeg" />
+    <Content Include="R.Img\Saint Croix racer.jpeg" />
+    <Content Include="R.Img\Y&amp;P&amp;B.jpg" />
+    <Content Include="Register page.html" />
+    <Content Include="Reptiles.html" />
+    <Content Include="Salamanders.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59412</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44315/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
